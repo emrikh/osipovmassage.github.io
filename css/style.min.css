@@ -497,9 +497,9 @@ img {
   display: flex; }
 
 .main-nav--shown .main-nav__toggle-burger {
-  background: 0 0;
-  -webkit-transition: background 0.3s 0;
-  transition: background 0.3s 0; }
+  background-color: transparent;
+  -webkit-transition: background 0.3s 0.5s;
+  transition: background 0.3s 0.5s; }
 
 .main-nav--shown .main-nav__toggle-burger::before,
 .main-nav--shown .main-nav__toggle-burger::after {
@@ -570,7 +570,11 @@ img {
     height: 3px;
     background-color: #b08969;
     -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%; }
+            transform-origin: 50% 50%;
+    -webkit-transition: top 0.3s 0.3s, -webkit-transform 0.3s;
+    transition: top 0.3s 0.3s, -webkit-transform 0.3s;
+    transition: top 0.3s 0.3s, transform 0.3s;
+    transition: top 0.3s 0.3s, transform 0.3s, -webkit-transform 0.3s; }
 
 .description h1 {
   margin: 0; }
