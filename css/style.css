@@ -498,8 +498,8 @@ img {
 
 .main-nav--shown .main-nav__toggle-burger {
   background-color: transparent;
-  -webkit-transition: background 0.3s 0.5s;
-  transition: background 0.3s 0.5s; }
+  -webkit-transition: background 0.3s 0s;
+  transition: background 0.3s 0s; }
 
 .main-nav--shown .main-nav__toggle-burger::before,
 .main-nav--shown .main-nav__toggle-burger::after {
