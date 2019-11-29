@@ -328,7 +328,7 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.375em;
   font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   background-color: white;
@@ -389,6 +389,20 @@ img {
   background-color: #4eb543;
   border-color: #4eb543; }
 
+.button-link {
+  color: #d45835;
+  white-space: nowrap;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation; }
+  .button-link:hover, .button-link:focus {
+    color: #d9694a; }
+  .button-link:active {
+    color: #b14425; }
+
 .page-header {
   background-color: #231e2f; }
 
@@ -421,7 +435,7 @@ img {
           justify-content: center; }
 
 .page-header__caption {
-  font-size: 24px;
+  font-size: 26px;
   color: #fbf9f9; }
 
 .page-header__logo {
@@ -481,8 +495,17 @@ img {
 .page-main__inner {
   background-color: white; }
 
-.page-main__heading {
-  text-align: center; }
+.page-main__section-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 40px 5%; }
 
 .page-main__section {
   width: 100%;
@@ -579,31 +602,51 @@ img {
 .description h1 {
   margin: 0; }
 
+.description__section-inner {
+  padding: 80px 10%; }
+
 .description__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 40px 5%; }
+          justify-content: space-between; }
 
-.description__text {
+.description__text-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   margin-bottom: 30px; }
 
 .description__name {
-  font-size: 24px;
-  line-height: 32px; }
+  font-size: 32px;
+  line-height: 40px; }
+
+.description__contact,
+.description__social {
+  margin-top: 30px; }
+
+.description__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.description__social-list {
+  margin-left: 20px; }
+
+.description__contact-button {
+  font-size: 1.286em; }
 
 .description__columns {
   display: -webkit-box;
@@ -647,6 +690,9 @@ img {
   padding: 0;
   list-style: none; }
 
+.services__inner {
+  background-color: #e5e5e6; }
+
 .services__list-item {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
@@ -658,31 +704,31 @@ img {
   border: 1px solid #bcbbc0;
   border-radius: 2px; }
 
-.services__inner {
+.services__columns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
+.services__column {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 30px;
+  background-color: #ffffff; }
+
+.services__column:first-of-type {
+  margin-right: 20px; }
+
 .services__name {
   font-weight: bold;
-  font-size: 18px; }
+  font-size: 20px; }
 
 .services__price {
   text-align: right; }
-
-.experience__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 40px 5%; }
 
 .experience__list {
   margin: 0;
@@ -720,18 +766,6 @@ img {
 
 .contacts address {
   font-style: normal; }
-
-.contacts__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 40px 5%; }
 
 .contacts__address {
   margin-bottom: 10px;
