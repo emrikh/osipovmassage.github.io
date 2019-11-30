@@ -626,13 +626,17 @@ img {
           flex-grow: 1;
   margin-bottom: 30px; }
 
+.description__text {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
 .description__name {
   font-size: 32px;
   line-height: 40px; }
 
-.description__contact,
-.description__social {
-  margin-top: 30px; }
+.description__contact {
+  margin-top: 40px; }
 
 .description__social {
   display: -webkit-box;
@@ -640,10 +644,8 @@ img {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
-
-.description__social-list {
-  margin-left: 20px; }
+          align-items: center;
+  margin-top: 10px; }
 
 .description__contact-button {
   font-size: 1.286em; }
