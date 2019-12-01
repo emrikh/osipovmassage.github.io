@@ -638,6 +638,11 @@ img {
   font-size: 32px;
   line-height: 40px; }
 
+.description__speciality {
+  margin-top: 10px;
+  font-size: 1.286em;
+  line-height: 28px; }
+
 .description__contact {
   margin-top: 40px; }
 
@@ -724,7 +729,7 @@ img {
   background-color: #ffffff; }
 
 .services__column:first-of-type {
-  margin-right: 20px; }
+  margin-right: 40px; }
 
 .services__name {
   font-weight: bold;
